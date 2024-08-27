@@ -1,0 +1,239 @@
+/* TOP MENU */
+:global(.vtex-flex-layout-0-x-flexRow--topbar) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--topbar) {
+    position: relative;
+    margin: 10px 0;
+    background: #414141;
+    border-radius: 9px;
+    height: 64px;
+
+    :global(.vtex-menu-2-x-menuContainerNav--top-menu) {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      :global(.vtex-menu-2-x-styledLink) {
+        color: #f2e8e1;
+      }
+    }
+
+    :global(.vtex-rich-text-0-x-wrapper--top-menu-notification) {
+      color: #f2e8e1;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    :global(.vtex-menu-2-x-menuContainerNav--top-social) {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      :global(.vtex-menu-2-x-styledLinkContainer) {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+/* FIM */
+
+/* TOP MENU MOBILE */
+:global(.vtex-flex-layout-0-x-flexRow--topbar-mobile) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--topbar-mobile) {
+    background: #414141;
+    border-radius: 9px;
+    margin: 5px 0;
+
+    :global(.vtex-rich-text-0-x-container--top-menu-notification) {
+      display: flex;
+      justify-content: center;
+      :global(.vtex-rich-text-0-x-paragraph--top-menu-notification) {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #f2e8e1;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+/* FIM */
+
+/* STICK MENU */
+:global(.vtex-sticky-layout-0-x-wrapper--main-menu-wrapper) {
+  margin-bottom: 25px;
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-menu) {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 9px;
+    padding: 0.5rem;
+    justify-content: space-between;
+
+    :global(.vtex-flex-layout-0-x-flexCol--category-menu) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    :global(.vtex-store-components-3-x-logoLink) {
+      display: flex;
+      :global(.vtex-store-components-3-x-logoContainer) {
+        max-width: unset;
+        min-width: unset;
+        max-height: unset;
+        width: fit-content;
+        padding: 0;
+        display: flex;
+      }
+    }
+  }
+
+  &:global(.vtex-sticky-layout-0-x-wrapper--main-menu-wrapper--stuck) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-menu) {
+      border-radius: 0 0 9px 9px;
+    }
+  }
+}
+/* FIM */
+
+/* STICKY MENU MOBILE */
+
+:global(.vtex-sticky-layout-0-x-wrapper--main-menu-mobile) {
+  :global(.vtex-sticky-layout-0-x-container--main-menu-mobile) {
+    top: 5px;
+    :global(.vtex-flex-layout-0-x-flexRow--menu-mobile-wrapper) {
+      margin-bottom: 5px;
+      :global(.vtex-flex-layout-0-x-flexRowContent--menu-mobile-wrapper) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #ffffff;
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 9px;
+        padding: 0.5rem;
+      }
+    }
+    :global(.vtex-flex-layout-0-x-flexRow--search-mobile-wrapper) {
+    }
+  }
+}
+
+/* FIM */
+
+/** SEARCH BAR */
+:global(.vtex-store-components-3-x-searchBarContainer) {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  :global(.vtex-store-components-3-x-autoCompleteOuterContainer--search-bar) {
+    :global(.vtex-input-prefix__group) {
+      border: 2px solid #f2f2f2;
+      border-radius: 9px;
+      height: unset;
+      :global(.vtex-styleguide-9-x-input) {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      :global(.vtex-store-components-3-x-suffixWrapper--search-bar) {
+        :global(.vtex-store-components-3-x-searchBarIcon--search-bar) {
+          :global(.vtex-store-components-3-x-searchIcon--search-bar) {
+            display: none;
+          }
+
+          &::after {
+            content: "";
+            display: block;
+            background: url("assets/img/search.svg") no-repeat center center;
+            background-size: 100%;
+            width: 18px;
+            height: 18px;
+            @media screen and (max-width: 768px) {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*FIM */
+
+/** ACCOUNT MENU */
+:global(.vtex-flex-layout-0-x-flexCol--account-menu),
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-mobile-wrapper) {
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--desktop-wishlist) {
+    :global(.vtex-store-components-3-x-imageElementLink--wishlist) {
+      height: 32px;
+    }
+  }
+
+  :global(.vtex-login-2-x-container) {
+    :global(.vtex-button) {
+      &:hover {
+        background: #fff;
+      }
+      :global(.vtex-button__label) {
+        padding: 0;
+        :global(.vtex-store-icons-0-x-profileIcon) {
+          display: none;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          background: url("assets/img/icon-profile.svg");
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+
+  :global(.vtex-minicart-2-x-minicartWrapperContainer) {
+    :global(.vtex-minicart-2-x-openIconContainer) {
+      padding: 0;
+      :global(.vtex-button) {
+        &:hover {
+          background: #fff;
+        }
+        :global(.vtex-button__label) {
+          padding: 0;
+          :global(.vtex-minicart-2-x-cartIcon) {
+            display: none;
+          }
+
+          &::after {
+            content: "";
+            display: block;
+            background: url("assets/img/icon-cart.svg");
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* FIM*/
+
+:global(.vtex-flex-layout-0-x-flexRowContent--search-mobile-wrapper) {
+}

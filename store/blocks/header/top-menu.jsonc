@@ -1,0 +1,87 @@
+{
+  "vtex.menu@2.x:menu#top-menu": {
+    "props": {
+      "blockClass": "top-menu"
+    },
+    "children": ["menu-item#reseller", "menu-item#kiosk"]
+  },
+  "menu-item#reseller": {
+    "props": {
+      "id": "menu-item-reseller",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Seja Revendedor",
+        "text": "Seja Revendedor"
+      }
+    }
+  },
+  "menu-item#kiosk": {
+    "props": {
+      "id": "menu-item-kiosk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tenha um Quiosque",
+        "text": "Tenha um Quiosque"
+      }
+    }
+  },
+  "rich-text#notification": {
+    "props": {
+      "blockClass": "top-menu-notification",
+      "textAlignment": "CENTER",
+      "text": "FRETE GRÁTIS em compras acima de R$150,00"
+    }
+  },
+  "vtex.menu@2.x:menu#top-social": {
+    "props": {
+      "blockClass": "top-social"
+    },
+    "children": ["menu-item#top-instagram", "menu-item#top-facebook"]
+  },
+  "menu-item#top-instagram": {
+    "props": {
+      "id": "menu-item-instagram",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "bnd-instagram",
+        "size": 18,
+        "viewBox": "0 0 19 19"
+      }
+    }
+  },
+  "menu-item#top-facebook": {
+    "props": {
+      "id": "menu-item-facebook",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "bnd-facebook",
+        "size": 18,
+        "viewBox": "0 0 11 19"
+      }
+    }
+  }
+}

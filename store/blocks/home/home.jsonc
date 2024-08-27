@@ -52,13 +52,16 @@
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": ["list-context.product-list#demo1"],
+    "props": {
+      "blockClass": "shelf"
+    }
   },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "collection": "1162"
     }
   },
   "slider-layout#demo-products": {

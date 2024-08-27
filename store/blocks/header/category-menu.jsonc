@@ -1,0 +1,163 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#influencers",
+      "menu-item#perfumes",
+      "menu-item#colonias",
+      "menu-item#hidratantes",
+      "menu-item#aromatizantes"
+    ]
+  },
+  "menu-item#influencers": {
+    "props": {
+      "blockclass": "menu-item",
+      "id": "menu-item-influencers",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Influencers",
+        "text": "Influencers"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#submenu"]
+  },
+  "vtex.menu@2.x:submenu#submenu": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#submenu"]
+  },
+  "vtex.menu@2.x:menu#submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#novidades",
+      "menu-item#perfumes-populares",
+      "menu-item#mais-vendidos"
+    ]
+  },
+  "menu-item#novidades": {
+    "props": {
+      "blockclass": "submenu-item",
+      "id": "menu-item-novidades",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "novidades",
+        "text": "novidades"
+      }
+    }
+  },
+  "menu-item#perfumes-populares": {
+    "props": {
+      "blockclass": "submenu-item",
+      "id": "menu-item-perfumes-populares",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "perfumes populares",
+        "text": "perfumes populares"
+      }
+    }
+  },
+  "menu-item#mais-vendidos": {
+    "props": {
+      "blockclass": "submenu-item",
+      "id": "menu-item-mais-vendidos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "mais vendidos",
+        "text": "mais vendidos"
+      }
+    }
+  },
+  "menu-item#perfumes": {
+    "props": {
+      "blockclass": "menu-item",
+      "id": "menu-item-perfumes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Perfumes",
+        "text": "Perfumes"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#submenu"]
+  },
+  "menu-item#colonias": {
+    "props": {
+      "blockclass": "menu-item",
+      "id": "menu-item-colonias",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Colônias",
+        "text": "Colônias"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#submenu"]
+  },
+  "menu-item#hidratantes": {
+    "props": {
+      "blockclass": "menu-item",
+      "id": "menu-item-hidratantes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Hidratantes",
+        "text": "Hidratantes"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#submenu"]
+  },
+  "menu-item#aromatizantes": {
+    "props": {
+      "blockclass": "menu-item",
+      "id": "menu-item-aromatizantes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Aromatizantes",
+        "text": "Aromatizantes"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#submenu"]
+  }
+}

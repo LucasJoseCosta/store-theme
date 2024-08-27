@@ -1,0 +1,83 @@
+{
+  "flex-layout.row#menu-actions-mobile": {
+    "props": {
+      "blockClass": "menu-actions-mobile",
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#my-account-actions",
+      "link#wishlist-mb",
+      "link#essence"
+    ]
+  },
+  "flex-layout.col#my-account-actions": {
+    "props": {
+      "blockClass": "my-account-actions"
+    },
+    "children": ["link#my-account", "link#my-orders"]
+  },
+  "link#my-account": {
+    "props": {
+      "href": "#",
+      "blockClass": "my-account",
+      "label": "Minha conta"
+    }
+  },
+  "link#my-orders": {
+    "props": {
+      "href": "#",
+      "blockClass": "my-orders",
+      "label": "Meus pedidos"
+    }
+  },
+  "link#wishlist-mb": {
+    "props": {
+      "href": "#",
+      "blockClass": "wishlist-mb",
+      "label": "Favoritos"
+    }
+  },
+  "link#essence": {
+    "props": {
+      "href": "#",
+      "blockClass": "essence",
+      "label": "Qual sua essência"
+    }
+  },
+  "flex-layout.row#department-menu-wrapper": {
+    "props": {
+      "blockClass": "department-menu-wrapper",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#department-menu-title",
+      "vtex.menu@2.x:menu#category-menu-mobile"
+    ]
+  },
+  "flex-layout.row#institutional-menu-wrapper": {
+    "props": {
+      "blockClass": "institutional-menu-wrapper",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#institutional-menu-title",
+      "vtex.menu@2.x:menu#institutional-menu-mobile"
+    ]
+  },
+  "rich-text#department-menu-title": {
+    "props": {
+      "blockClass": "department-menu-title",
+      "textAlignment": "LEFT",
+      "text": "Departamento"
+    }
+  },
+  "rich-text#institutional-menu-title": {
+    "props": {
+      "blockClass": "institutional-menu-title",
+      "textAlignment": "LEFT",
+      "text": "Institucional"
+    }
+  }
+}

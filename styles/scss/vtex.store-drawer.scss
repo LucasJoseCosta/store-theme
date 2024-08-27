@@ -1,0 +1,211 @@
+.drawer {
+  width: 100% !important;
+  .drawerContent {
+    position: relative;
+    padding: 0 15px;
+    height: 100%;
+    .closeIconContainer {
+      justify-content: flex-end;
+      .closeIconButton {
+        margin-top: 12px;
+        padding-right: 0;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-logoLink) {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      :global(.vtex-store-components-3-x-logoContainer) {
+        max-width: unset;
+        max-height: unset;
+        min-width: unset;
+        padding: 0;
+        display: flex;
+      }
+    }
+
+    :global(.vtex-menu-2-x-menuContainerNav) {
+      width: 100%;
+      margin-top: 20px;
+      :global(.vtex-menu-2-x-menuContainer) {
+        :global(.vtex-flex-layout-0-x-flexCol--my-account-actions) {
+          flex-direction: row;
+          gap: 10px;
+          :global(.vtex-flex-layout-0-x-flexColChild--my-account-actions) {
+            width: 50%;
+          }
+        }
+
+        :global(.vtex-flex-layout-0-x-flexRowContent--menu-actions-mobile) {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 20px;
+          :global(.vtex-store-link-0-x-link) {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: #232020;
+            border: 1px solid #d8d8d8;
+            border-radius: 9px;
+            padding: 0.8rem;
+            padding-top: 1rem;
+          }
+
+          :global(.vtex-store-link-0-x-link--my-account) {
+            :global(.vtex-store-link-0-x-label--my-account) {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+              &::before {
+                content: "";
+                display: block;
+                background: url("assets/img/icon-profile.svg") no-repeat right
+                  center;
+                width: 20px;
+                height: 20px;
+                background-size: 100%;
+                margin-top: -5px;
+              }
+            }
+          }
+
+          :global(.vtex-store-link-0-x-link--my-orders) {
+            :global(.vtex-store-link-0-x-label--my-orders) {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+              &::before {
+                content: "";
+                display: block;
+                background: url("assets/img/pedidos.svg") no-repeat right center;
+                width: 20px;
+                height: 20px;
+                background-size: 100%;
+                margin-top: -5px;
+              }
+            }
+          }
+
+          :global(.vtex-store-link-0-x-link--wishlist-mb) {
+            :global(.vtex-store-link-0-x-label--wishlist-mb) {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+              &::before {
+                content: "";
+                display: block;
+                background: url("assets/img/favorito.svg") no-repeat right
+                  center;
+                width: 20px;
+                height: 20px;
+                background-size: 100%;
+                margin-top: -5px;
+              }
+            }
+          }
+
+          :global(.vtex-store-link-0-x-link--essence) {
+            :global(.vtex-store-link-0-x-label--essence) {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+              &::before {
+                content: "";
+                display: block;
+                background: url("assets/img/essencia.svg") no-repeat right
+                  center;
+                width: 20px;
+                height: 20px;
+                background-size: 100%;
+                margin-top: -5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--department-menu-wrapper),
+    :global(.vtex-flex-layout-0-x-flexRow--institutional-menu-wrapper) {
+      :global(.vtex-flex-layout-0-x-flexRowContent--department-menu-wrapper),
+      :global(
+          .vtex-flex-layout-0-x-flexRowContent--institutional-menu-wrapper
+        ) {
+        flex-direction: column;
+
+        :global(.vtex-rich-text-0-x-container--department-menu-title),
+        :global(.vtex-rich-text-0-x-container--institutional-menu-title) {
+          :global(.vtex-rich-text-0-x-paragraph) {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+          }
+        }
+
+        :global(.vtex-menu-2-x-menuContainerNav) {
+          margin-top: unset;
+          :global(.vtex-menu-2-x-menuContainer) {
+            flex-direction: column;
+
+            :global(.vtex-menu-2-x-styledLinkContainer) {
+              margin: 0;
+
+              :global(.vtex-menu-2-x-styledLinkContent) {
+                padding: 10px 0;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--department-menu-wrapper) {
+      :global(.vtex-flex-layout-0-x-flexRowContent--department-menu-wrapper) {
+        :global(.vtex-menu-2-x-menuContainerNav) {
+          :global(.vtex-menu-2-x-menuContainer) {
+            :global(.vtex-menu-2-x-styledLinkContainer) {
+              :global(.vtex-menu-2-x-styledLinkContent) {
+                &::after {
+                  content: "";
+                  display: block;
+                  background: url("assets/img/flecha-menu.svg") no-repeat right
+                    center;
+                  width: 20px;
+                  height: 10px;
+                  background-size: 80%;
+                }
+              }
+            }
+
+            :global(.vtex-menu-2-x-menuItem) {
+              :global(.vtex-menu-2-x-submenuContainer) {
+                :global(.vtex-menu-2-x-submenuWrapper) {
+                  position: unset !important;
+                  margin: 0;
+                  border: none;
+                  padding-top: 0;
+
+                  :global(.vtex-menu-2-x-styledLinkContainer) {
+                    :global(.vtex-menu-2-x-styledLinkContent) {
+                      &::after {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

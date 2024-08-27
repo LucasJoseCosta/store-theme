@@ -1,4 +1,170 @@
 {
+  "flex-layout.col#navigation-menu-wrapper": {
+    "props": {
+      "blockClass": "navigation-menu-wrapper"
+    },
+    "children": [
+      "rich-text#navigation-menu-title",
+      "vtex.menu@2.x:menu#navigation-menu"
+    ]
+  },
+  "rich-text#navigation-menu-title": {
+    "props": {
+      "blockClass": "navigation-menu-title",
+      "textAlignment": "LEFT",
+      "text": "NAVEGUE"
+    }
+  },
+  "vtex.menu@2.x:menu#navigation-menu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#news",
+      "menu-item#blackfriday",
+      "menu-item#sale",
+      "menu-item#personalization"
+    ]
+  },
+  "flex-layout.col#my-account-menu-wrapper": {
+    "props": {
+      "blockClass": "my-account-menu-wrapper"
+    },
+    "children": [
+      "rich-text#my-account-menu-title",
+      "vtex.menu@2.x:menu#my-account-menu"
+    ]
+  },
+  "rich-text#my-account-menu-title": {
+    "props": {
+      "blockClass": "my-account-menu-title",
+      "textAlignment": "LEFT",
+      "text": "MINHA CONTA"
+    }
+  },
+  "vtex.menu@2.x:menu#my-account-menu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#news",
+      "menu-item#blackfriday",
+      "menu-item#sale",
+      "menu-item#personalization"
+    ]
+  },
+  "flex-layout.col#institutional-menu-wrapper": {
+    "props": {
+      "blockClass": "institutional-menu-wrapper"
+    },
+    "children": [
+      "rich-text#institutional-footer-menu-title",
+      "vtex.menu@2.x:menu#institutional-menu"
+    ]
+  },
+  "rich-text#institutional-footer-menu-title": {
+    "props": {
+      "blockClass": "institutional-footer-menu-title",
+      "textAlignment": "LEFT",
+      "text": "INSTITUCIONAL"
+    }
+  },
+  "vtex.menu@2.x:menu#institutional-menu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#news",
+      "menu-item#blackfriday",
+      "menu-item#sale",
+      "menu-item#personalization"
+    ]
+  },
+  "flex-layout.col#information-menu-wrapper": {
+    "props": {
+      "blockClass": "information-menu-wrapper"
+    },
+    "children": [
+      "rich-text#information-menu-title",
+      "vtex.menu@2.x:menu#information-menu"
+    ]
+  },
+  "rich-text#information-menu-title": {
+    "props": {
+      "blockClass": "information-menu-title",
+      "textAlignment": "LEFT",
+      "text": "INFORMAÇÕES"
+    }
+  },
+  "vtex.menu@2.x:menu#information-menu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#news",
+      "menu-item#blackfriday",
+      "menu-item#sale",
+      "menu-item#personalization"
+    ]
+  },
+  "flex-layout.col#contact-us-wrapper": {
+    "props": {
+      "blockClass": "contact-us-wrapper"
+    },
+    "children": [
+      "rich-text#contact-us-menu-title",
+      "flex-layout.row#contact-us-infos-wrapper"
+    ]
+  },
+  "rich-text#contact-us-menu-title": {
+    "props": {
+      "blockClass": "contact-us-menu-title",
+      "textAlignment": "RIGHT",
+      "text": "FALE CONOSCO"
+    }
+  },
+  "flex-layout.row#contact-us-infos-wrapper": {
+    "props": {
+      "blockClass": "contact-us-infos-wrapper"
+    },
+    "children": [
+      "flex-layout.col#opening-hours-wrapper",
+      "flex-layout.col#contact-wrapper"
+    ]
+  },
+  "flex-layout.col#opening-hours-wrapper": {
+    "props": {
+      "blockClass": "opening-hours-wrapper"
+    },
+    "children": ["rich-text#opening-hours-text"]
+  },
+  "rich-text#opening-hours-text": {
+    "props": {
+      "blockClass": "opening-hours-text",
+      "textAlignment": "RIGHT",
+      "text": "Segunda a Sexta 08:00 às 18:00"
+    }
+  },
+  "flex-layout.col#contact-wrapper": {
+    "props": {
+      "blockClass": "contact-wrapper"
+    },
+    "children": ["link#contact-phone", "link#contact-email"]
+  },
+  "link#contact-phone": {
+    "props": {
+      "href": "#",
+      "blockClass": "contact-phone",
+      "label": "(11) 3389-0224"
+    }
+  },
+  "link#contact-email": {
+    "props": {
+      "href": "#",
+      "blockClass": "contact-email",
+      "label": "marketing@fator5.com.br"
+    }
+  },
   "vtex.menu@2.x:menu#Products": {
     "props": {
       "orientation": "vertical"

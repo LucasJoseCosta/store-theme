@@ -4,23 +4,17 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#logo-social-wrapper",
+      "flex-layout.row#footer-menu-wrapper",
+      "flex-layout.row#footer-infos-wrapper",
+      "flex-layout.row#footer-copyright-wrapper"
     ]
   },
-  "flex-layout.row#footer-1-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
-    ],
+  "flex-layout.row#logo-social-wrapper": {
+    "children": ["logo#desktop", "social-networks"],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
+      "blockClass": "logo-social-wrapper",
+      "paddingTop": 4,
       "paddingBottom": 3
     }
   },
@@ -29,88 +23,172 @@
     "props": {
       "socialNetworks": [
         {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
           "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
+          "url": "#"
         },
         {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
+          "name": "Facebook",
+          "url": "#"
         }
       ]
     }
   },
 
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
-    "props": {
-      "blockClass": "payment-methods"
-    }
-  },
-  "accepted-payment-methods": {
-    "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
-    }
-  },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
-    "props": {
-      "blockClass": "credits"
-    }
-  },
-  "rich-text#footer": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
-    }
-  },
-
-  "footer-layout.mobile": {
+  "flex-layout.row#footer-menu-wrapper": {
     "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
-    ]
-  },
-  "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
-    }
-  },
-  "flex-layout.col#footer-1-mobile": {
-    "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
+      "flex-layout.col#navigation-menu-wrapper",
+      "flex-layout.col#my-account-menu-wrapper",
+      "flex-layout.col#institutional-menu-wrapper",
+      "flex-layout.col#information-menu-wrapper",
+      "flex-layout.col#contact-us-wrapper"
     ],
     "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
+      "blockClass": "footer-menu-wrapper"
     }
   },
-  "flex-layout.row#1-footer-mobile": {
+  "flex-layout.row#footer-infos-wrapper": {
+    "children": [
+      "flex-layout.col#payment-methods-wrapper",
+      "flex-layout.col#security-wrapper",
+      "flex-layout.col#tech-wrapper"
+    ],
     "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
-  },
-  "rich-text#footer-mobile": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+      "blockClass": "footer-infos-wrapper"
     }
+  },
+  "flex-layout.col#payment-methods-wrapper": {
+    "children": [
+      "rich-text#payment-methods-title",
+      "image#accepted-payment-methods",
+      "rich-text#payment-methods-warning"
+    ],
+    "props": {
+      "blockClass": "payment-methods-wrapper"
+    }
+  },
+  "rich-text#payment-methods-title": {
+    "props": {
+      "text": "PAGAMENTO",
+      "blockClass": "payment-methods-title"
+    }
+  },
+  "image#accepted-payment-methods": {
+    "props": {
+      "src": "assets/img/cartoes.svg"
+    }
+  },
+  "rich-text#payment-methods-warning": {
+    "props": {
+      "text": "Senhores clientes, informamos que não realizamos cobraça via depósito em conta ou enviamos links para pagamento. Não clicar em nenhum link suspeito",
+      "blockClass": "payment-methods-warning"
+    }
+  },
+  "flex-layout.col#security-wrapper": {
+    "children": ["rich-text#security-title", "image#security-image-wrapper"],
+    "props": {
+      "blockClass": "security-wrapper"
+    }
+  },
+  "rich-text#security-title": {
+    "props": {
+      "text": "SEGURANÇA",
+      "blockClass": "security-title"
+    }
+  },
+  "image#security-image-wrapper": {
+    "props": {
+      "src": "assets/img/letsencrypt.svg",
+      "blockClass": "security-image"
+    }
+  },
+  "flex-layout.col#tech-wrapper": {
+    "children": ["rich-text#tech-title", "image#tech-image-wrapper"],
+    "props": {
+      "blockClass": "security-wrapper"
+    }
+  },
+  "rich-text#tech-title": {
+    "props": {
+      "text": "TECNOLOGIA",
+      "blockClass": "tech-title"
+    }
+  },
+  "image#tech-image-wrapper": {
+    "props": {
+      "src": "assets/img/vtex-logo.svg"
+    }
+  },
+  "flex-layout.row#footer-copyright-wrapper": {
+    "children": [
+      "flex-layout.col#copyright-text-wrapper",
+      "flex-layout.row#copyright-dev-wrapper"
+    ],
+    "props": {
+      "blockClass": "footer-copyright-wrapper"
+    }
+  },
+  "flex-layout.col#copyright-text-wrapper": {
+    "children": ["rich-text#footer-copyright-text"],
+    "props": {
+      "blockClass": "copyright-text-wrapper"
+    }
+  },
+  "rich-text#footer-copyright-text": {
+    "props": {
+      "text": "&copy; Fator 5 | 2011 - 2018 | Todos os direitos reservados. Fator 5 Ltda. CNPJ: 14.192.258/0001-14",
+      "blockClass": "footer-copyright-text"
+    }
+  },
+  "flex-layout.row#copyright-dev-wrapper": {
+    "children": ["rich-text#footer-copyright-dev-text", "image#wing-logo"],
+    "props": {
+      "blockClass": "copyright-dev-wrapper"
+    }
+  },
+  "rich-text#footer-copyright-dev-text": {
+    "props": {
+      "text": "Desenvolvido por",
+      "blockClass": "footer-copyright-dev-text"
+    }
+  },
+  "image#wing-logo": {
+    "props": {
+      "src": "assets/img/wing.svg",
+      "width": "65px"
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#logo-social-wrapper",
+      "flex-layout.row#footer-menu-mobile-wrapper",
+      "flex-layout.row#contact-us-mobile-wrapper",
+      "flex-layout.row#footer-infos-mobile-wrapper",
+      "flex-layout.row#footer-copyright-wrapper"
+    ]
+  },
+  "flex-layout.row#footer-menu-mobile-wrapper": {
+    "children": [
+      "flex-layout.col#navigation-menu-wrapper",
+      "flex-layout.col#my-account-menu-wrapper",
+      "flex-layout.col#institutional-menu-wrapper",
+      "flex-layout.col#information-menu-wrapper"
+    ],
+    "props": {
+      "blockClass": "footer-menu-wrapper"
+    }
+  },
+  "flex-layout.row#contact-us-mobile-wrapper": {
+    "children": ["flex-layout.col#contact-us-wrapper"],
+    "props": {
+      "blockClass": "contact-us-mobile-wrapper"
+    }
+  },
+  "flex-layout.row#footer-infos-mobile-wrapper": {
+    "children": [
+      "flex-layout.col#security-wrapper",
+      "flex-layout.col#tech-wrapper",
+      "flex-layout.col#payment-methods-wrapper"
+    ],
+    "props": { "blockClass": "footer-infos-mobile-wrapper" }
   }
 }

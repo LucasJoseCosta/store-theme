@@ -1,0 +1,26 @@
+/* menu desktop*/
+:global(.vtex-sticky-layout-0-x-wrapper--main-menu-wrapper) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-menu) {
+    .menuContainerNav {
+      .menuItem {
+        .submenuContainer {
+          .submenuWrapper {
+            width: 250px;
+            padding: 1rem 0;
+            .submenu {
+              justify-content: start;
+              .menuContainerNav {
+                .menuItem {
+                  .styledLinkContainer {
+                    padding: 0.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*fim*/

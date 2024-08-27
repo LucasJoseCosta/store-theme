@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_2141" data-name="Retângulo 2141" width="32" height="32" transform="translate(-1776 -2069)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.3"/>
+    </clipPath>
+  </defs>
+  <g id="cart" transform="translate(1776 2069)" clip-path="url(#clip-path)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(-1773 -2068)">
+      <g id="Grupo_28" data-name="Grupo 28" transform="translate(0 3)">
+        <path id="Caminho_10" data-name="Caminho 10" d="M23.52,29h-15a5.48,5.48,0,0,1-5.31-6.83L6.25,9.76a1,1,0,0,1,1-.76H24a1,1,0,0,1,1,.7l3.78,12.16a5.49,5.49,0,0,1-.83,4.91A5.41,5.41,0,0,1,23.52,29ZM8,11,5.11,22.65A3.5,3.5,0,0,0,8.48,27h15a3.44,3.44,0,0,0,2.79-1.42,3.5,3.5,0,0,0,.53-3.13L23.28,11Z" transform="translate(-3.041 -3)" fill="#414141" stroke="#fff" stroke-width="0.5"/>
+        <path id="Caminho_11" data-name="Caminho 11" d="M20,17a1,1,0,0,1-1-1V8a3,3,0,0,0-6,0v8a1,1,0,0,1-2,0V8A5,5,0,0,1,21,8v8A1,1,0,0,1,20,17Z" transform="translate(-3.041 -3)" fill="#414141" stroke="#fff" stroke-width="0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
